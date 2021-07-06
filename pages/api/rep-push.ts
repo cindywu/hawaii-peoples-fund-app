@@ -15,7 +15,7 @@ export default async (req: any, res: any) => {
       let lastMutationID = parseInt(
         (
           await db.oneOrNone(
-            'SELECT last_mutation_id FROM trunk_mini_replicache_client WHERE id = $1',
+            'SELECT last_mutation_id FROM trunk_mini_2_replicache_client WHERE id = $1',
             push.clientID
           )
         )?.last_mutation_id ?? '0',
@@ -23,7 +23,7 @@ export default async (req: any, res: any) => {
 
       if (!lastMutationID) {
         await db.none(
-          'INSERT INTO trunk_mini_replicache_client (id, last_mutation_id) VALUES ($1, $2)',
+          'INSERT INTO trunk_mini_2_replicache_client (id, last_mutation_id) VALUES ($1, $2)',
           [push.clientID, lastMutationID]
         )
       }
@@ -66,7 +66,7 @@ export default async (req: any, res: any) => {
         lastMutationID,
       )
       await db.none(
-        'UPDATE trunk_mini_replicache_client SET last_mutation_id = $2 WHERE id = $1',
+        'UPDATE trunk_mini_2_replicache_client SET last_mutation_id = $2 WHERE id = $1',
         [push.clientID, lastMutationID],
       )
       res.send('{}')
@@ -81,7 +81,7 @@ export default async (req: any, res: any) => {
 
 async function createReference(db: any, {id, abbreviation, title, order}: any, version: any) {
   await db.none(
-    `INSERT INTO trunk_mini (
+    `INSERT INTO trunk_mini_2 (
       id, abbreviation, title, ord, version) values
       ($1, $2, $3, $4, $5)`,
       [id, abbreviation, title, order, version],

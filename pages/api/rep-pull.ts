@@ -12,17 +12,17 @@ export default async (req: any, res: any) => {
       const lastMutationID = parseInt(
         (
           await db.oneOrNone(
-            'SELECT last_mutation_id FROM trunk_mini_replicache_client where id = $1',
+            'SELECT last_mutation_id FROM trunk_mini_2_replicache_client where id = $1',
             pull.clientID,
           )
         )?.last_mutation_id ?? '0',
       )
       const changed = await db.manyOrNone(
-        'SELECT id, abbreviation, title, ord FROM trunk_mini WHERE version > $1',
+        'SELECT id, abbreviation, title, ord FROM trunk_mini_2 WHERE version > $1',
         parseInt(pull.cookie ?? 0),
       )
       const cookie = (
-        await db.one('SELECT max(version) AS verison FROM trunk_mini')
+        await db.one('SELECT max(version) AS verison FROM trunk_mini_2')
       ).version
       console.log({cookie, lastMutationID, changed})
 
@@ -57,6 +57,7 @@ export default async (req: any, res: any) => {
     console.log('Processed pull in', Date.now() - t0)
   }
 }
+
 // // eslint-disable-next-line import/no-anonymous-default-export
 // export default async (req: any, res: any) => {
 //   res.json({
