@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Trunk Mini 2</title>
+        <title>Hawai‘i People's Fund</title>
         <meta name="description" content="offline-first collaborative reference manager" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
