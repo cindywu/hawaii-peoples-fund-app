@@ -2654,10 +2654,10 @@ replicache-react-util@^2.3.0:
   resolved "https://registry.yarnpkg.com/replicache-react-util/-/replicache-react-util-2.3.0.tgz#76af4a3459ef4da29c45b3c99a407728e6e718f9"
   integrity sha512-TQZQ/IFsVb4wJ6w6wJlRIJqCh7ttm0o6kE0oeLMcdEOncoa0d0/qvyKGa4H5ICAqe59dNnc/OyITkevRVLDMSA==
 
-replicache@^6.2.2:
-  version "6.2.2"
-  resolved "https://registry.yarnpkg.com/replicache/-/replicache-6.2.2.tgz#ce3de9ca8f9970c2e522ad68f4d58f55728594b6"
-  integrity sha512-qXU2MDe7rpZ5qpPAnhQvZ/dwApWd94Wx8OBkGmzhmreP0a9aCtykeIUk34zXr3hcTCH4KiEIjfPkdpiJqMLvzQ==
+replicache@^9.0.0:
+  version "9.0.0-beta.0"
+  resolved "https://registry.yarnpkg.com/replicache/-/replicache-9.0.0-beta.0.tgz#9c7993353c26c63d722b6b1634c16c6e455e32af"
+  integrity sha512-wBeFfRrNxYdKSMl0yS6LVXH6Phm7eLilJZyo90mefmdSs+wDZwEaMxBQk14DdKi0ZHgeWcU+o8qj6IJ4ib/UDg==
 
 require-from-string@^2.0.2:
   version "2.0.2"

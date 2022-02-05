@@ -1,5 +1,5 @@
 import React from 'react'
-import  styles from './application-form.module.css'
+import styles from './application-form.module.css'
 import Link from 'next/link'
 
 export default function ApplicationForm() {
@@ -16,7 +16,7 @@ export default function ApplicationForm() {
       <div className={styles.title}>
         Application Form
       </div>
-      <div className={styles.prompt}>What is the social change this proposal seeks to make? How does this work help forge a stronger movement for social justice in Hawai'i?</div>
+      <div className={styles.prompt}>What is the social change this proposal seeks to make? How does this work help forge a stronger movement for social justice in Hawaiʻi?</div>
       <textarea
         className={styles.textArea}
         placeholder={'350 word limit'}
