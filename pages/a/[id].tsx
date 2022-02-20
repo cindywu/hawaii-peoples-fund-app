@@ -14,9 +14,11 @@ import ProposalList from '../../src/frontend/proposal-list'
 import Nav from '../../src/frontend/nav'
 import Footer from '../../src/frontend/footer'
 import ApplicantInfo from '../../src/frontend/applicant-info'
+import ApplicationForm from '../../src/frontend/application-form'
 
 export default function Home() {
   const [rep, setRep] = useState<Replicache<M> | null>(null);
+  const [showApplication, setShowApplication] = useState(false)
 
   useEffect(() => {
     const [, , roomID] = location.pathname.split("/");
@@ -65,6 +67,9 @@ export default function Home() {
     })();
   }, []);
 
+  function handleSetShowApplication(state: boolean){
+    setShowApplication(state)
+  }
   return (
     <div className={styles.container}>
       <Head>
@@ -72,31 +77,19 @@ export default function Home() {
         <meta name="description" content="offline-first collaborative reference manager" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Nav/>
-
+      <Nav
+        handleSetShowApplication={handleSetShowApplication}
+        showApplication={showApplication}
+      />
       <main className={styles.main}>
-        <ApplicantInfo/>
-
-        {/* {rep &&
-          <ProposalList rep={rep}/>
-        } */}
-        {/* <p className={styles.description}>Urgent action grant</p> */}
-        {/* <Link href="/apply">
-          <button className={styles.button}>
-            Apply
-          </button>
-        </Link> */}
-        {/* <h2>Statement of Purpose</h2>
-        <p className={styles.description}>
-          {statementOfPurpose[0]}
-          <br></br>
-          <br></br>
-          {statementOfPurpose[1]}
-        </p> */}
-
-
+        { showApplication ?
+          <ApplicationForm rep={rep}/>
+        :
+          <ApplicantInfo
+            handleSetShowApplication={handleSetShowApplication}
+          />
+        }
       </main>
-
       <Footer/>
     </div>
   )

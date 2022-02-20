@@ -1,0 +1,56 @@
+.container {
+  width: 60vw;
+  /* background-color: pink; */
+  color: hsl(0, 0%, 30%);
+}
+
+.section {
+  display: flex;
+}
+
+.sectionTitle {
+  padding: 1rem;
+  color:#CD4A7E;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .01rem;
+  max-width: 100px;
+}
+
+.field {
+  max-width: 500px;
+  padding: 0 1rem 1rem 1rem;
+}
+
+.prompt {
+  padding: 1rem 1rem 0 1rem;
+}
+
+.textAreaContainer {
+  padding: 1rem;
+  width: 100%;
+}
+
+.textArea {
+  width: 100%;
+  resize: none;
+  outline: none;
+  padding: .5rem;
+  overflow: auto;
+}
+
+.title {
+  font-size: 2rem;
+  padding: 1.2rem;
+  display: flex;
+}
+
+.subTitle {
+  color: hsl(0, 0%, 70%);
+  font-size: 1rem;
+  padding: 1rem 0;
+}
+
+.left {
+  width: 7rem;
+}

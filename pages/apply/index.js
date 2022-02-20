@@ -1,13 +1,18 @@
 import React from 'react'
-import Link from 'next/link'
-import ApplicationForm from '../../components/application-form'
-import FormList from '../../components/form-list'
+import NavBasic from '../../src/frontend/nav-basic'
+import Footer from '../../src/frontend/footer'
+import styles from '../../styles/Home.module.css'
 
-export default function index() {
+export default function Apply() {
+  // const proposals = getProposals(rep)
   return (
-    <div>
-      <ApplicationForm/>
-      <FormList/>
+    <div className={styles.container}>
+      <NavBasic/>
+      <div>
+        hi
+      </div>
+
+      <Footer/>
     </div>
   )
 }
