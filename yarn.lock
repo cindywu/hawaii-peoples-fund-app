@@ -40,7 +40,7 @@
 
 "@cloudflare/workers-types@^3.4.0":
   version "3.4.0"
-  resolved "https://registry.npmjs.org/@cloudflare/workers-types/-/workers-types-3.4.0.tgz"
+  resolved "https://registry.yarnpkg.com/@cloudflare/workers-types/-/workers-types-3.4.0.tgz#80311e14df2f7f8c2cfcdce945b4f4ad8f9b03b1"
   integrity sha512-i/3czUrt6YqbOWl44OtIqd0cSZvEVXp/1oD/DZylC4PHZL3q/BhbamdEVeVhc/HPk4iD/7MZ2HGaIMO4Z4b12A==
 
 "@eslint/eslintrc@^0.4.2":
@@ -944,7 +944,7 @@ esbuild-windows-arm64@0.14.23:
 
 esbuild@^0.14.23:
   version "0.14.23"
-  resolved "https://registry.npmjs.org/esbuild/-/esbuild-0.14.23.tgz"
+  resolved "https://registry.yarnpkg.com/esbuild/-/esbuild-0.14.23.tgz#95e842cb22bc0c7d82c140adc16788aac91469fe"
   integrity sha512-XjnIcZ9KB6lfonCa+jRguXyRYcldmkyZ99ieDksqW/C8bnyEX299yA4QH2XcgijCgaddEZePPTgvx/2imsq7Ig==
   optionalDependencies:
     esbuild-android-arm64 "0.14.23"
@@ -1734,7 +1734,7 @@ micromatch@^4.0.2:
     braces "^3.0.1"
     picomatch "^2.2.3"
 
-miniflare@^2.2.0:
+miniflare@^2.3.0:
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/miniflare/-/miniflare-2.3.0.tgz#ab2308c58d80337c384f2d2ffa1312f98615fea5"
   integrity sha512-0lK4Df+jfqLDSDDgj4AOJffb1G6sN7XvB5QGUaquEakW+qPdurydyNhFKcFKBgpk4ozN6WTmB2x802iPXQcJJQ==
@@ -2328,8 +2328,7 @@ replicache@^9.0.0-beta.0, replicache@^9.0.0-beta.1:
 
 "reps-client@file:reps-client-1.0.0.tgz":
   version "1.0.0"
-  resolved "file:reps-client-1.0.0.tgz"
-  integrity sha512-GYs8ZAm02XMNTfd9q1w0Be7lfoicCrdhIjHqU3al7YG0Wk4V5BvUBFB+2O9q00VO0bh8AYeX+L1agO72m5GwUw==
+  resolved "file:reps-client-1.0.0.tgz#fefd9ad3009d508051ec860a46fb9fc5a90d3bc4"
   dependencies:
     mocha "^9.2.0"
     nanoid "^3.2.0"
@@ -2339,8 +2338,7 @@ replicache@^9.0.0-beta.0, replicache@^9.0.0-beta.1:
 
 "reps-do@file:reps-do-1.0.1.tgz":
   version "1.0.1"
-  resolved "file:reps-do-1.0.1.tgz"
-  integrity sha512-dx1grboREbLGQq8E8MvkqmWcP8Zb+5niKkNDffBWS4PT1mnTfyIEJ0ZUh4ut++xxgQpAcPVH2qpMtzppvwC8lw==
+  resolved "file:reps-do-1.0.1.tgz#48bc40be60c30d9c0e13c05b6c1554f998b6f414"
   dependencies:
     replicache "^9.0.0-beta.0"
 
