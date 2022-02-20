@@ -10,9 +10,6 @@
     "start": "next start",
     "lint": "next lint"
   },
-  "engines" : {
-    "node" : ">=16.7"
-  },
   "dependencies": {
     "@cloudflare/workers-types": "^3.4.0",
     "esbuild": "^0.14.23",
