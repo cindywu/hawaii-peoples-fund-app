@@ -9,7 +9,7 @@ import ApplicationFormSection from './application-form-section'
 export default function ApplicationForm({rep}: {rep: Replicache<M>}) {
   const proposals = getProposals(rep)
   const [proposal, setProposal] = useState<any>(null)
-  console.log('proposals', proposals)
+
   function handleProposalStart(){
     const r = randomProposal()
     rep.mutate.createProposal(r)
@@ -17,24 +17,26 @@ export default function ApplicationForm({rep}: {rep: Replicache<M>}) {
 
   useEffect(() => {
     const p = proposals as unknown as any
+    if (p && p.length === 0) {
+      const r = randomProposal()
+      rep.mutate.createProposal(r)
+    }
     p && p.length > 0 && setProposal(p[0][1])
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [proposals])
-
-  useEffect(() => {
-    console.log('proposal', proposal)
-  }, [proposal])
-
-
-
 
   return (
     <div className={styles.container}>
       {proposals && proposals.length === 0 &&
-        <button
-          onClick={handleProposalStart}
-        >Start Proposal</button>
+        <div className={styles.buttonContainer}>
+          <button
+            className={styles.button}
+            onClick={handleProposalStart}
+          >
+            Start Proposal
+          </button>
+        </div>
       }
-
       { proposal &&
         <>
           <div className={styles.title}>

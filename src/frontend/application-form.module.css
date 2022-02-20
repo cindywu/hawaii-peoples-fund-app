@@ -54,3 +54,17 @@
 .left {
   width: 7rem;
 }
+
+.button {
+  margin: 2em;
+  padding: 1em 2em;
+  font-size: 2em;
+  border-radius: 10px;
+  border: none;
+  background-color: hsla(336,55%,55%,100%);
+  color: white;
+}
+
+.button:hover {
+  background-color: hsla(336,55%,45%,100%);
+}
