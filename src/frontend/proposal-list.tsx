@@ -17,8 +17,13 @@ export default function PropsalList({ rep }: {rep: Replicache<typeof mutators>})
 
   return (
     <div>
-      proposal-list
       <div>
+        <div>
+          Welcome to HPF Apply!
+        </div>
+        <div>
+          Spring 2022
+        </div>
         <button
           onClick={() => handleProposalStart()}
         >

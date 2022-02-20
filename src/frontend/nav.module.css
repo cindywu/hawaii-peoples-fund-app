@@ -1,0 +1,41 @@
+.container {
+  color: hsl(0, 0%, 70%);
+  display: flex;
+  justify-content: space-between;
+  width: 80vw;
+  border-bottom: 1px solid hsl(0, 0%, 70%);
+  padding: 1rem;
+}
+
+.left {
+  display: flex;
+}
+
+.right {
+  display: flex;
+}
+
+.message {
+  padding: .8rem 1rem;
+  color: hsl(0, 0%, 40%);
+}
+
+.buttonContainer {
+
+
+}
+
+.button {
+  background-color: #CD4A7E;
+  border: none;
+  padding: 1rem 2rem;
+  color: white;
+}
+
+.button:hover {
+  background-color: #a43b64;
+}
+
+.navigation {
+  padding: .5rem 1rem;
+}

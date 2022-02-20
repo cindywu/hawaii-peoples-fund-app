@@ -11,6 +11,9 @@ import { nanoid } from "nanoid";
 import { randUserInfo } from "../../src/datamodel/client-state";
 import { Client } from "reps-client";
 import ProposalList from '../../src/frontend/proposal-list'
+import Nav from '../../src/frontend/nav'
+import Footer from '../../src/frontend/footer'
+import ApplicantInfo from '../../src/frontend/applicant-info'
 
 export default function Home() {
   const [rep, setRep] = useState<Replicache<M> | null>(null);
@@ -69,37 +72,32 @@ export default function Home() {
         <meta name="description" content="offline-first collaborative reference manager" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <Nav/>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>
-          <Image src="/HPF.png" alt="Hawai'i People's Fund Logo" width={500} height={200} />
-        </h1>
-        {rep &&
+        <ApplicantInfo/>
+
+        {/* {rep &&
           <ProposalList rep={rep}/>
-        }
+        } */}
         {/* <p className={styles.description}>Urgent action grant</p> */}
         {/* <Link href="/apply">
           <button className={styles.button}>
             Apply
           </button>
-        </Link>
-        <h2>Statement of Purpose</h2>
+        </Link> */}
+        {/* <h2>Statement of Purpose</h2>
         <p className={styles.description}>
           {statementOfPurpose[0]}
           <br></br>
           <br></br>
           {statementOfPurpose[1]}
         </p> */}
-        {/* <code className={styles.code}>alpha</code> */}
 
 
       </main>
 
-      {/* <footer className={styles.footer}>
-        <Link href="http://jellypbc.com">
-          <a>Produced by Jelly Public Benefit Corporation</a>
-        </Link>
-      </footer> */}
+      <Footer/>
     </div>
   )
 }
