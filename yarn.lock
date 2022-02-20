@@ -1734,9 +1734,9 @@ micromatch@^4.0.2:
     braces "^3.0.1"
     picomatch "^2.2.3"
 
-miniflare@^2.3.0:
+miniflare@^2.2.0:
   version "2.3.0"
-  resolved "https://registry.npmjs.org/miniflare/-/miniflare-2.3.0.tgz"
+  resolved "https://registry.yarnpkg.com/miniflare/-/miniflare-2.3.0.tgz#ab2308c58d80337c384f2d2ffa1312f98615fea5"
   integrity sha512-0lK4Df+jfqLDSDDgj4AOJffb1G6sN7XvB5QGUaquEakW+qPdurydyNhFKcFKBgpk4ozN6WTmB2x802iPXQcJJQ==
   dependencies:
     "@miniflare/cache" "2.3.0"
