@@ -5,7 +5,7 @@ import {
   TeeLogger,
 } from "reps-do";
 import { createWorker } from "reps-do";
-import { mutators, type M } from "../src/datamodel/mutators.js";
+import { mutators, M } from "../src/datamodel/mutators.js";
 
 export class Server extends BaseServer<M> {
   constructor(state: DurableObjectState, env: Record<string, string>) {
