@@ -82,7 +82,7 @@ export default function Home() {
         showApplication={showApplication}
       />
       <main className={styles.main}>
-        { showApplication ?
+        { rep && showApplication ?
           <ApplicationForm rep={rep}/>
         :
           <ApplicantInfo
